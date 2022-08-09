@@ -97,6 +97,8 @@ eval "$(hub alias -s)"
 # Git aliases
 alias gs="git status"
 alias gpu="git push -u origin HEAD"
+alias gl="git log -3"
+alias gla="git log --all"
 alias glp="git log --all --graph --decorate --oneline --simplify-by-decoration"
 alias gcan="git commit --amend --no-edit"
 alias gcanp="git commit --amend --no-edit && git push -f"
