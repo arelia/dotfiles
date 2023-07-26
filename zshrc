@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# z - https://github.com/rupa/z
-. /usr/local/etc/profile.d/z.sh
+# z - https://github.com/agkozak/zsh-z
+# . /usr/local/etc/profile.d/z.sh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
