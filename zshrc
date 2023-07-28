@@ -110,13 +110,3 @@ eval "$(rbenv init -)"
 # Link OpenSSL per https://github.com/puma/puma/issues/2544
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-
-
-# To do or automate
-# Install Homebrew
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/areliajones/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# brew install gh
-# brew install nodenv
-# brew install rbenv ruby-build
