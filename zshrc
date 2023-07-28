@@ -1,9 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# z - https://github.com/agkozak/zsh-z
-# . /usr/local/etc/profile.d/z.sh
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -92,8 +89,6 @@ alias zedit="nano ~/.zshrc"
 alias ll="ls -lha"
 alias pyserv="python -m SimpleHTTPServer"
 
-eval "$(hub alias -s)"
-
 # Git aliases
 alias gs="git status"
 alias gpu="git push -u origin HEAD"
@@ -115,3 +110,13 @@ eval "$(rbenv init -)"
 # Link OpenSSL per https://github.com/puma/puma/issues/2544
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+
+# To do or automate
+# Install Homebrew
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/areliajones/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# brew install gh
+# brew install nodenv
+# brew install rbenv ruby-build
