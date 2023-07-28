@@ -29,3 +29,13 @@ This supports the following tools:
 This repo uses the wonderful [Vim Plug](https://github.com/junegunn/vim-plug) tool to manage vim plugins. If you'd like to add plugins, simply add them between the opening and closing plug statements in the `vimrc` file.
 
 ## My dotfiles
+
+
+# To do or automate
+# Install Homebrew
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/areliajones/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# brew install gh
+# brew install nodenv
+# brew install rbenv ruby-build
