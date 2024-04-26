@@ -32,10 +32,9 @@ This repo uses the wonderful [Vim Plug](https://github.com/junegunn/vim-plug) to
 
 
 # To do or automate
-# Install Homebrew
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/areliajones/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# brew install gh
-# brew install nodenv
-# brew install rbenv ruby-build
+- Install Homebrew
+  - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+  - `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/areliajones/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"`
+- `brew install gh`
+- `brew install nodenv`
+- `brew install rbenv ruby-build`
