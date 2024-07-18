@@ -80,7 +80,6 @@ Plug 'cocopon/iceberg.vim'
 Plug 'arzg/vim-colors-xcode'
 Plug 'endel/vim-github-colorscheme'
 Plug 'YorickPeterse/vim-paper'
-Plug 'tpope/vim-vividchalk'
 
 call plug#end()
 
