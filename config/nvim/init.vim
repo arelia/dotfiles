@@ -38,6 +38,7 @@ set undodir=/tmp//
 let mapleader=','
 
 " setup Plug
+vim      if empty(glob('~/.config/nvim/autoload/plug.vim'))        silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim        autocmd VimEnter * PlugInstall | source $MYVIMRC      endif   
 call plug#begin('~/.config/nvim/bundle')
 
 Plug 'projekt0n/github-nvim-theme'
