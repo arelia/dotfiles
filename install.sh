@@ -25,6 +25,7 @@ link_dotfile() {
 
 # Link shell configuration files
 link_dotfile "$DOTFILES_DIR/zshrc" "$HOME/.zshrc"
+link_dotfile "$DOTFILES_DIR/bashrc" "$HOME/.bashrc"
 link_dotfile "$DOTFILES_DIR/bash_profile" "$HOME/.bash_profile"
 link_dotfile "$DOTFILES_DIR/gitignore_global" "$HOME/.gitignore_global"
 
