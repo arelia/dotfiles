@@ -1,3 +1,14 @@
+# Detect if running in Codespaces
+if [ -n "$CODESPACES" ]; then
+    export IS_CODESPACES=true
+fi
+
+# Detect OS
+case "$(uname -s)" in
+    Darwin*) export IS_MACOS=true ;;
+    Linux*)  export IS_LINUX=true ;;
+esac
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -104,8 +115,25 @@ alias gpf="git push -f"
 
 # alias rake='noglob rake'
 
-eval "$(nodenv init -)"
-eval "$(rbenv init -)"
+# macOS-specific: nodenv and rbenv initialization
+if [ "$IS_MACOS" = true ]; then
+    if command -v nodenv &> /dev/null; then
+        eval "$(nodenv init -)"
+    fi
+    if command -v rbenv &> /dev/null; then
+        eval "$(rbenv init -)"
+    fi
+    # Link OpenSSL per https://github.com/puma/puma/issues/2544
+    export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+fi
 
-# Link OpenSSL per https://github.com/puma/puma/issues/2544
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+# Codespaces-specific configuration
+if [ "$IS_CODESPACES" = true ]; then
+    # Set editor for git commits
+    export EDITOR="code --wait"
+    export VISUAL="code --wait"
+    
+    # Helpful aliases for Codespaces development
+    alias server="script/server"
+    alias console="script/console"
+fi

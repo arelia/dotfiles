@@ -1,40 +1,40 @@
-# Codespaces Dotfiles Template
+# Dotfiles
 
-Test
-This repo is a starting point for using custom dotfiles (terminal / editor configuration) with GitHub Codespaces
+Personal dotfiles for shell, vim, and tmux configuration. Works with both macOS and GitHub Codespaces.
 
-## How to use this repo
+## Automatic setup with GitHub Codespaces
 
-In order to use this template, 
+1. Go to [GitHub Codespaces settings](https://github.com/settings/codespaces)
+2. Under "Dotfiles", check **Automatically install dotfiles**
+3. Select this repository (`arelia/dotfiles`) from the dropdown
+4. Create a new Codespace — your dotfiles will be automatically installed!
 
-1. [create a new repo from this template](https://github.com/cwndrws/codespaces-dotfiles-template/generate). Make it public and name it `dotfiles`.
-1. Edit the files that you want to customize in `tmux.conf`, `vimrc`, etc.
-1. Push your changes to your `dotfiles` repo
-1. Create a new codespace, and see your new dotfiles
-1. 🍾
+## What's included
 
-## What's in here?
+- **zshrc** - Zsh configuration with oh-my-zsh, git aliases, and platform-specific settings
+- **bash_profile** - Bash configuration (redirects to zsh)
+- **vimrc** - Vim configuration with vim-plug and various plugins
+- **tmux.conf** - Tmux configuration with vim-style navigation
+- **gitignore_global** - Global gitignore patterns
+- **config/nvim/** - Neovim configuration
 
-Just some blank configuration files for popular Text User Interface (TUI) apps that folks may want to use for development in codespaces and a script to put them in the right place.
+## Manual installation
 
-This supports the following tools:
+```bash
+git clone https://github.com/arelia/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+./install.sh
+```
 
-* Tmux
-* Screen
-* Vim
-* Emacs
+## Platform support
 
-## Vim Plugins
+These dotfiles detect the environment and adjust automatically:
 
-This repo uses the wonderful [Vim Plug](https://github.com/junegunn/vim-plug) tool to manage vim plugins. If you'd like to add plugins, simply add them between the opening and closing plug statements in the `vimrc` file.
+- **macOS**: Uses `nodenv`, `rbenv`, and `reattach-to-user-namespace` for clipboard
+- **Linux/Codespaces**: Uses `xclip` for clipboard, sets VS Code as the default editor
 
-## My dotfiles
+## Vim plugins
 
+This repo uses [vim-plug](https://github.com/junegunn/vim-plug) to manage vim plugins. Plugins are automatically installed when you run the install script.
 
-# To do or automate
-- Install Homebrew
-  - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-  - `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/areliajones/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"`
-- `brew install gh`
-- `brew install nodenv`
-- `brew install rbenv ruby-build`
+To add plugins, edit the `vimrc` file and add them between `call plug#begin()` and `call plug#end()`, then run `:PlugInstall` in vim.
