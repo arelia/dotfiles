@@ -88,7 +88,7 @@ filetype plugin indent on    " required
 
 
 set cursorline
-vim      let g:codedark_conservative = 1  
+let g:codedark_conservative = 1
 
 " colorscheme paper 
 " let g:airline_theme='sol'
