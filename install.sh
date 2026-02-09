@@ -59,4 +59,12 @@ if command -v vim &> /dev/null; then
     vim +PlugInstall +qall 2>/dev/null || true
 fi
 
+# Change default shell to zsh in Codespaces
+if [ -n "$CODESPACES" ]; then
+    if [ "$SHELL" != "$(which zsh)" ]; then
+        echo "Setting zsh as default shell..."
+        sudo chsh -s "$(which zsh)" "$USER"
+    fi
+fi
+
 echo "Dotfiles installation complete!"
