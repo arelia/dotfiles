@@ -1,3 +1,4 @@
+![good-morning-new-york](https://github.com/user-attachments/assets/fb46d265-74a3-4e36-9c81-3d347e68cacb)
 # Dotfiles
 
 Personal dotfiles for shell, vim, and tmux configuration. Works with both macOS and GitHub Codespaces.
