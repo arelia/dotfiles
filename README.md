@@ -38,3 +38,4 @@ These dotfiles detect the environment and adjust automatically:
 This repo uses [vim-plug](https://github.com/junegunn/vim-plug) to manage vim plugins. Plugins are automatically installed when you run the install script.
 
 To add plugins, edit the `vimrc` file and add them between `call plug#begin()` and `call plug#end()`, then run `:PlugInstall` in vim.
+![good-morning-new-york](https://github.com/user-attachments/assets/585f1792-1200-4520-8676-598222b947e7)
