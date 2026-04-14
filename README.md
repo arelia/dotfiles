@@ -38,3 +38,5 @@ These dotfiles detect the environment and adjust automatically:
 This repo uses [vim-plug](https://github.com/junegunn/vim-plug) to manage vim plugins. Plugins are automatically installed when you run the install script.
 
 To add plugins, edit the `vimrc` file and add them between `call plug#begin()` and `call plug#end()`, then run `:PlugInstall` in vim.
+
+![arelia-under-10K](https://github.com/user-attachments/assets/213684e2-e664-44b1-9938-6c763f226d8b)
